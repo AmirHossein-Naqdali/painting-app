@@ -1,0 +1,63 @@
+.Header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-selector label {
+  font-weight: bold;
+}
+
+.user-selector select {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+}
+
+.painting-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.painting-title label {
+  font-weight: bold;
+}
+
+.Header input {
+  font-size: 1.25rem;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.Header button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.Header button:hover {
+  background-color: #0056b3;
+}
+
+.Header button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.65;
+}

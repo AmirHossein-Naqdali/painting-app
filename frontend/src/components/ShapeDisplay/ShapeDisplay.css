@@ -1,0 +1,25 @@
+.shape-display {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .shape-display.circle {
+    background-color: #ff6347;
+    border-radius: 50%;
+  }
+  
+  .shape-display.square {
+    background-color: #4682b4;
+  }
+  
+  .shape-display.triangle {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #32cd32;
+  }
+  

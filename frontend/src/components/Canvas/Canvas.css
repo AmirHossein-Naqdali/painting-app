@@ -1,0 +1,81 @@
+.Canvas {
+  flex-grow: 1;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  cursor: crosshair;
+  user-select: none;
+}
+
+.canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px;
+  background-color: rgba(255, 220, 220, 0.9);
+  border: 1px solid #dc3545;
+  border-radius: 5px;
+}
+
+.shape {
+  position: absolute;
+  transition: outline 0.1s ease-in-out;
+}
+
+.shape.selected {
+  outline: 3px solid #0d6efd;
+  outline-offset: 4px;
+}
+
+.shape.preview {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ff6347;
+  border-radius: 50%;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #4682b4;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #32cd32;
+}

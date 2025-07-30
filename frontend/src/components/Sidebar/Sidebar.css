@@ -1,0 +1,39 @@
+.Sidebar {
+  flex: 1;
+  background-color: #f8f9fa;
+  border-left: 1px solid #dee2e6;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Sidebar .tools-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.Sidebar button {
+  width: 80%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.Sidebar button:hover {
+  background-color: #e9ecef;
+}
+
+.Sidebar button.active {
+  border-color: #007bff;
+  background-color: #e7f3ff;
+}
